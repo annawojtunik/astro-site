@@ -1,0 +1,494 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic)
+$main-font: 'Open Sans', sans-serif
+$main-color: #313234
+$link-color: #00BCD4
+$content-color: #fff
+
+* 
+	box-sizing: border-box
+
+
+body 
+	margin: 0
+	font-family: $main-font
+
+
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+	
+.col-offset-1 
+	margin-left: 8.33%
+.col-offset-2 
+	margin-left: 16.66%
+.col-offset-3 
+	margin-left: 25%
+.col-offset-4 
+	margin-left: 33.33%
+.col-offset-5 
+	margin-left: 41.66%
+.col-offset-6 
+	margin-left: 50%
+.col-offset-7 
+	margin-left: 58.33%
+.col-offset-8 
+	margin-left: 66.66%
+.col-offset-9 
+	margin-left: 75%
+.col-offset-10 
+	margin-left: 83.33%
+.col-offset-11 
+	margin-left: 91.66%
+.col-offset-0 
+	margin-left: 0
+
+[class*="col-"] 
+	float: left
+ 
+.row:before,
+.row:after 
+	content: " "
+	display: table
+	clear: both
+
+.container 
+	max-width: 1200px
+	width: 100%
+	margin: 0 auto
+		
+header 
+	background-color: $main-color
+	height: 50px
+	background-color: rgba(0,0,0,0.5)
+
+	nav 
+		img 
+			padding: 10px 0
+		
+		ul 
+			float: right
+			margin: 0
+			padding: 0
+			list-style-type: none
+		
+			li 
+				display: inline-block
+				
+				a 
+					line-height: 50px
+					display: block
+					color: #fff
+					padding: 0 20px
+					text-decoration: none
+					text-transform: uppercase
+					
+					&:hover 
+						color: $link-color
+
+.hero 
+	background-image: url("https://static.pexels.com/photos/29601/pexels-photo-29601.jpg")
+	background-size: cover
+	background-position: center
+	margin: auto
+	display: block
+	height: 50vh
+
+.slogan 
+	background: rgba(0, 0, 0, 0.5)
+	color: $content-color
+	float: right
+	margin-top: 17vh
+	padding: 0px 20px 0px 20px
+	width: 500px
+
+	p 
+		font-size: 24px
+		margin-bottom: 0
+
+	h1 
+		margin-top: 0
+
+/*astro icons section*/
+
+.astro 
+	width: 75%
+	margin: auto
+		
+	.col 
+		float: left
+		margin: 40px auto
+		padding: 20px
+		text-align: center
+		
+		p 
+			font-size: 12px
+			color: #ccc
+			margin-top: 0
+			
+		h4 
+			color: $main-color
+			margin-bottom: 3px
+			
+		i.fa 
+			background-color: $main-color
+			color: #fff
+			font-size: 50px
+			width: 70px
+			height: 70px
+			border-radius: 20%
+			line-height: 70px
+			
+			&:hover 
+				background-color: $link-color
+
+	.title 
+		text-align: center	
+		margin-bottom: 40px
+		
+		h1 
+			margin-bottom: 5px
+
+/*gallery section*/
+
+#img-1 
+	background-image: url("https://images.pexels.com/photos/241149/pexels-photo-241149.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")
+#img-2 
+	background-image: url("https://images.pexels.com/photos/2162/sky-space-dark-galaxy.jpg?h=350&auto=compress")
+#img-3 
+	background-image: url("https://images.pexels.com/photos/24175/pexels-photo-24175.jpg?w=1260&h=750&auto=compress&cs=tinysrgb")
+#img-4 
+	background-image: url("https://images.pexels.com/photos/47367/full-moon-moon-bright-sky-47367.jpeg?h=350&auto=compress&cs=tinysrgb")
+#img-5 
+	background-image: url("https://images.pexels.com/photos/7544/pexels-photo.jpg?h=350&auto=compress")
+#img-6 
+	background-image: url("https://images.pexels.com/photos/29601/pexels-photo-29601.jpg?h=350&auto=compress")
+#img-7 
+	background-image: url("https://images.pexels.com/photos/39699/galaxies-interacting-universe-stars-39699.jpeg?h=350&auto=compress")
+#img-8 
+	background-image: url("https://images.pexels.com/photos/24978/pexels-photo.jpg?h=350&auto=compress")
+#img-9 
+	background-image: url("https://images.pexels.com/photos/8662/sunset-feathers.jpg?h=350&auto=compress")
+#img-10 
+	background-image: url("https://images.pexels.com/photos/6547/sky-night-space-galaxy.jpeg?h=350&auto=compress")
+
+.gallery 
+		
+	.layer 
+		background-color: rgba(0, 0, 0, 0.5)
+		height: 100%
+		text-align: center
+		visibility: hidden
+		transition: 0.1s
+			
+		i.fa 
+			color: #444
+			background-color: #fff
+			width: 20px
+			height: 20px
+			font-size: 14px
+			line-height: 20px
+			text-align: center
+			border-radius: 3px
+			margin-left: 5px
+			margin-top: 80px
+		
+	.img 
+		height: 180px
+		position: relative
+		background-position: center
+		background-size: cover
+		float: left
+			
+		&:hover 
+			cursor: pointer
+				
+			.layer 
+				visibility: visible	
+
+/*members section*/
+
+#member-1 
+	background-image: url("http://images6.fanpop.com/image/photos/32700000/Lily-lily-collins-32778519-200-200.png")
+#member-2 
+	background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTlkADPYiMg9TFAFrPpJP8wCg4FtdEIf4SuCSpbwNKvIxO5wmRo")
+#member-3 
+	background-image: url("http://www.ilikewallpaper.net/ipad-wallpapers/download/18993/brunette-woman-ipad-wallpaper-ilikewallpaper_com.jpg")
+#member-4 
+	background-image: url("http://houseofgeekery.files.wordpress.com/2012/06/poots.jpg")
+
+.members 
+	
+	.col 
+		float: left
+		text-align: center
+		margin: 40px auto
+		
+		.member 
+			margin: auto
+			height: 180px
+			width: 180px
+			position: relative
+			border-radius: 50%
+			background-position: center
+			background-size: cover
+			
+			.layer 
+				background-color: rgba(0, 0, 0, 0.5)
+				height: 100%
+				text-align: center
+				color: $content-color
+				font-size: 13px
+				border-radius: 50%
+				line-height: 180px
+				visibility: hidden
+				transition: 0.1s
+				
+				p 
+					margin-top: 0
+			
+			h4 
+				margin-top: 5px
+				color: #666
+				font-size: 13px
+			
+		&:hover .layer 
+			visibility: visible	
+
+/*about section*/
+
+.about-info
+	margin: 0
+	padding: 0 15px
+	color: $content-color
+
+.about 
+	background: url("https://static.pexels.com/photos/42393/night-stars-clouds-42393.jpeg")
+	background-size: cover
+	background-position: center
+	margin: auto
+		
+	.about-content 
+		padding: 20px 
+			
+		.col 
+			float: left
+			margin: 40px auto
+				
+			h2 
+				text-transform: uppercase
+				@extend .about-info
+				
+			.about-text 
+				text-align: justify
+				font-size: 12px
+				float: left
+				@extend .about-info
+
+/*stats section*/
+
+.stats 
+	width: 75%
+	margin: 0 auto
+		
+	.number 
+		float: left
+		padding: 0 20px
+		text-align: center
+			
+		h2 
+			font-weight: bold
+			font-size: 46px
+			color: $main-color
+			margin-bottom: 0
+			text-align: center
+			
+		p  
+			color: $link-color
+			margin-top: 0
+			margin-bottom: 30px
+			text-transform: uppercase
+			font-size: 12px
+			font-weight: bold
+
+/*footer section*/
+
+.contact 
+	padding: 0
+	background-color: #333
+	color: $content-color
+	text-align: left
+
+	.col 
+		padding: 40px
+		
+		p 
+			font-size: 12px
+			padding: 0
+			
+		h3 
+			text-transform: uppercase
+				
+			&:after 
+				content: ""
+				display: inline-block
+				width: 40px
+				height: 1px
+				background: #fff
+				margin-left: 5px
+				margin-bottom: 6px
+				
+		.icon-btn 
+			background-color: $link-color
+			border: none
+			border-radius: 5%
+			color: $content-color
+			cursor: pointer
+			font-size: 18px
+			height: 35px
+			width: 35px
+			line-height: 35px
+			margin: 6px 2px
+			
+			&:hover 
+				background-color: #fff
+				color: $link-color
+
+.footer 
+	background-color: #222
+	color: $content-color
+	text-align: center
+	margin: 0 auto
+
+	p 
+		margin: 10px 0
+
+
+@media (max-width: 767px)
+	/* For tablets: */
+	[class*="col-"] 
+		width: 100%
+		padding: 10px
+		float: left
+    
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
+    
+	header
+		height: 350px
+		text-align: center
+			
+		nav ul 
+			float: none 
+			
+			li
+				display: block
+	
+	.astro 
+		width: 90%
+			
+		.col 
+			margin: 0 auto
+			padding: 20px 5px 0 5px
+				
+			&:nth-child(3) 
+				margin-bottom: 30px
+	
+	.title 
+		padding: 20px 5px 0 5px
+	
+	.gallery 
+		
+		.img 
+			height: 200px
+			
+		.layer 
+			background: none
+			text-align: right
+			visibility: visible
+			margin: 0
+			
+			i.fa 
+				margin-left: 5px
+				margin-top: 5px
+
+	.members 
+		margin: 0 auto 20px
+		
+		.col
+			margin: 15px auto
+
+	.about 
+		
+		.about-content 
+			padding: 30px
+			
+			.col 
+				margin: 10px auto
+				
+				.about-text 
+					padding: 0
+	
+	.stats 
+		width: 90%
+		
+		.number 
+			padding: 0
+				
+			p
+				margin-bottom: 10px
+				
+			h2
+				margin-top: 10px
+	
+	.contact
+		padding: 0 30px
+		text-align: center	
+		margin: auto
+			
+		.col
+			padding: 10px
+
+	
